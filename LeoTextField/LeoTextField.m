@@ -62,7 +62,10 @@
         }
     }
     
-    self.changeBlock(self);//文本改变回调
+    if(self.changeBlock)
+    {
+        self.changeBlock(self);//文本改变回调
+    }
 }
 
 
